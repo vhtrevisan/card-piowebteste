@@ -60,7 +60,7 @@ checkoutButton.addEventListener('click', () => {
                     `\n\nValor total: R$ ${totalPriceElement.textContent}`;
     
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = '5515998570140'; // Substitua pelo número do WhatsApp do estabelecimento
+    const phoneNumber = '5511999999999'; // Substitua pelo número do WhatsApp do estabelecimento
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
     
     window.open(whatsappUrl, '_blank');

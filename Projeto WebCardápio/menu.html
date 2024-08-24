@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="client-info">
+                <span class="client-name" id="client-name"></span>
+                <span class="table-number" id="table-number"></span>
+            </div>
+            <div class="cart-icon" id="cart-icon">
+                <img src="./assets/cart.png" alt="Carrinho">
+            </div>
+        </header>
+
+        <main>
+            <section class="menu-category">
+                <h2>Pratos</h2>
+                <div class="menu-item">
+                    <span class="item-name">Prato Exemplo 1</span>
+                    <span class="item-price">R$ 30,00</span>
+                    <button class="add-to-cart" data-name="Prato Exemplo 1" data-price="30.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Prato Exemplo 2</span>
+                    <span class="item-price">R$ 25,00</span>
+                    <button class="add-to-cart" data-name="Prato Exemplo 2" data-price="25.00">Adicionar ao Carrinho</button>
+                </div>
+            </section>
+
+            <section class="menu-category">
+                <h2>Bebidas</h2>
+                <div class="menu-item">
+                    <span class="item-name">Bebida Exemplo 1</span>
+                    <span class="item-price">R$ 10,00</span>
+                    <button class="add-to-cart" data-name="Bebida Exemplo 1" data-price="10.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Bebida Exemplo 2</span>
+                    <span class="item-price">R$ 12,00</span>
+                    <button class="add-to-cart" data-name="Bebida Exemplo 2" data-price="12.00">Adicionar ao Carrinho</button>
+                </div>
+            </section>
+
+            <section class="menu-category">
+                <h2>Porções</h2>
+                <div class="menu-item">
+                    <span class="item-name">Porção Exemplo 1</span>
+                    <span class="item-price">R$ 20,00</span>
+                    <button class="add-to-cart" data-name="Porção Exemplo 1" data-price="20.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Porção Exemplo 2</span>
+                    <span class="item-price">R$ 15,00</span>
+                    <button class="add-to-cart" data-name="Porção Exemplo 2" data-price="15.00">Adicionar ao Carrinho</button>
+                </div>
+            </section>
+        </main>
+
+        <aside class="cart-sidebar" id="cart-sidebar">
+            <h2>Carrinho</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>Total:</strong> R$ <span id="total-price">0,00</span>
+            </div>
+            <button id="close-cart">Fechar</button>
+            <button id="checkout-button">Realizar Pedido</button>
+        </aside>
+    </div>
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

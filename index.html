@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>GARÇOM</h1>
+        <h2>VIRTUAL</h2>
+        <div class="logo-container">
+            <img src="./assets/teste logo.svg" alt="Logo do Estabelecimento">
+        </div>
+        <form id="login-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="table">Número da Mesa:</label>
+            <input type="text" id="table" name="table" required>
+            <button type="submit">Acessar Cardápio</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const table = document.getElementById('table').value;
+            localStorage.setItem('clientName', name);
+            localStorage.setItem('tableNumber', table);
+            window.location.href = 'menu.html';
+        });
+    </script>
+</body>
+
+</html>
